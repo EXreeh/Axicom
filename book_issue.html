@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book-issue-container">
+        <h2>Issue a Book</h2>
+        <form action="/issue-book" method="POST">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required>
+            
+            <label for="issueDate">Issue Date:</label>
+            <input type="date" id="issueDate" name="issueDate" required>
+            
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required>
+            
+            <button type="submit">Issue Book</button>
+        </form>
+    </div>
+</body>
+</html>
